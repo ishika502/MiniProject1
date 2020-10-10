@@ -1,0 +1,128 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@600&display=swap") */
+
+* {
+   box-sizing: border-box;
+   padding: 0;
+   margin: 0;
+   font-family: 'Sansita Swashed', cursive;
+   
+}
+.bg{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(111, 111, 175);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.center{
+    width: 25%;
+    height: 80vh;
+    background-color: rgb(170, 250, 250);
+    box-shadow: 5px 5px 25px -5px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+}
+
+h1 {
+    color: teal;
+    padding: 6px 0 2px 0;
+    margin-bottom: 10px;
+    background-color:rgb(255, 220, 227);
+    box-shadow: 5px 5px 25px -5px rgba(0, 0, 0, 0.5);
+}
+
+input{
+    text-align: center;
+    height: 40px;
+    top: 10px;
+    border: none;
+    background: white;
+    font-size: 20px;
+    font-weight: 500;
+    width: 70%;
+    border-bottom: 2px solid rgb(255, 220, 227) ;
+    outline: none;
+}
+
+.btn {
+    padding: 0px 3px 3px 4px;
+    margin-left: 10px;
+    height: 40px;
+    width: 40px;
+    color: #fff;
+    font-size: 25px;
+    text-emphasis: bold;;
+    border-radius: 50%;
+    background-color: rgb(255, 220, 227);
+    border-color: transparent;
+    border: none;
+    outline: none;
+    box-shadow: 5px 5px 25px -5px rgba(0, 0, 0, 0.5);
+    
+}
+.btn:hover{
+    background-color: greenyellow;
+    cursor: pointer;
+}
+
+ol{
+    margin-top: 30px;
+}
+
+ol li{
+    padding-left: 0px;
+    text-align: left;
+    font-size: 20px;
+    font-weight: 500;
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    color: teal;
+    text-transform: capitalize;
+}
+
+.todo{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+
+.todo .fa-times{
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:  rgb(255, 220, 227);
+    border-radius: 50%;
+    margin: 0 15px 0 15px;
+    color: white;
+    box-shadow: 5px 5px 25px -5px rgba(0, 0, 0, 0.5);
+}
+
+.todo .fa-times:hover{
+    background-color: tomato;
+}
+
+@media (max-width: 768px){
+    .center{
+        width: 55%;
+    }
+    .todo .fa-times{
+        margin: 0 15px 0 15px ;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .btn{
+        margin-left: 5px;
+        min-height: 40px;
+        width: 40px;
+        color: #fff;
+        font-size: 30px;
+    }
+}
+
